@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2015
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pexeso v2.CSharp.Plugins", "Pexeso v2.CSharp.Plugins.csproj", "{1EEADA2E-F768-A1FE-6F62-9EB30BBD4FBE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pexeso v2.CSharp", "Pexeso v2.CSharp.csproj", "{C29CEBA0-2CA4-6598-0B21-FF56E38ED26D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pexeso v2.CSharp.Editor", "Pexeso v2.CSharp.Editor.csproj", "{7855EFEA-B371-B138-F67A-D149D565DCE4}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1EEADA2E-F768-A1FE-6F62-9EB30BBD4FBE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1EEADA2E-F768-A1FE-6F62-9EB30BBD4FBE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1EEADA2E-F768-A1FE-6F62-9EB30BBD4FBE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1EEADA2E-F768-A1FE-6F62-9EB30BBD4FBE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C29CEBA0-2CA4-6598-0B21-FF56E38ED26D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C29CEBA0-2CA4-6598-0B21-FF56E38ED26D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C29CEBA0-2CA4-6598-0B21-FF56E38ED26D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C29CEBA0-2CA4-6598-0B21-FF56E38ED26D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7855EFEA-B371-B138-F67A-D149D565DCE4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7855EFEA-B371-B138-F67A-D149D565DCE4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7855EFEA-B371-B138-F67A-D149D565DCE4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7855EFEA-B371-B138-F67A-D149D565DCE4}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

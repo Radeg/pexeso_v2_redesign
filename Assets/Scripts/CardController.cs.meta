@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: 8008f1d5fe925f949b2ef62f59628c1b
+timeCreated: 1447930338
+licenseType: Free
+MonoImporter:
+  serializedVersion: 2
+  defaultReferences:
+  - card: {instanceID: 0}
+  - defaultCardSprite: {instanceID: 0}
+  - animalCardSprite: {instanceID: 0}
+  - flipAnimation: {instanceID: 0}
+  - flipBackAnimation: {instanceID: 0}
+  - soundManager: {fileID: 11460752, guid: 194b29c4b2e7e1e4a8366bef9fb32f68, type: 2}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
