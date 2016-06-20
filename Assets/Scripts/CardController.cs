@@ -27,13 +27,24 @@ public class CardController : MonoBehaviour
 
     void Update ()
     {
+        GameObject[] sameCards = GameObject.FindGameObjectsWithTag("Active");
         int activeCount = GameObject.FindGameObjectsWithTag("Active").Length;
 
         if (activeCount == 2)
         {
             isClickable = false;
-            MatchingCards();
-            StartCoroutine(FlipCardBack());
+            for (int i = 0; i < sameCards.Length; i++)
+            {
+                if (sameCards[0].name == sameCards[1].name)
+                {
+                    soundManager.PlaySound(2);
+                    Destroy(sameCards[i], 0.6f);
+                    isClickable = true;
+                } else
+                {
+                    StartCoroutine(FlipCardBack());
+                }
+            }
         }
     }
 
@@ -58,11 +69,11 @@ public class CardController : MonoBehaviour
             activeCard.GetComponent<Animator>().SetBool(flipCardHash, false);
             activeCard.tag = "Untagged";
         }
-        yield return new WaitForSeconds(0.6f);
+        //yield return new WaitForSeconds(0.6f);
         isClickable = true;
     }
 
-    void MatchingCards()
+    /*void MatchingCards()
     {
         GameObject[] sameCards = GameObject.FindGameObjectsWithTag("Active");
 
@@ -74,7 +85,7 @@ public class CardController : MonoBehaviour
                 Destroy(sameCards[i], 0.6f);
             }
         }
-    }
+    }*/
 
     void FlipCardChangeSprite ()
     {
