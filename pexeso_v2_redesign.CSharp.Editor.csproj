@@ -100,35 +100,8 @@
     <Reference Include="SyntaxTree.VisualStudio.Unity.Bridge">
       <HintPath>Library\UnityAssemblies\SyntaxTree.VisualStudio.Unity.Bridge.dll</HintPath>
     </Reference>
-    <Reference Include="UnityEditor.EditorTestsRunner">
-      <HintPath>Library\UnityAssemblies\UnityEditor.EditorTestsRunner.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEditor.Networking">
-      <HintPath>Library\UnityAssemblies\UnityEditor.Networking.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEngine.Advertisements">
-      <HintPath>Library\UnityAssemblies\UnityEngine.Advertisements.dll</HintPath>
-    </Reference>
-    <Reference Include="nunit.framework">
-      <HintPath>Library\UnityAssemblies\nunit.framework.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEditor.UI">
-      <HintPath>Library\UnityAssemblies\UnityEditor.UI.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEngine.Analytics">
-      <HintPath>Library\UnityAssemblies\UnityEngine.Analytics.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEngine.Networking">
-      <HintPath>Library\UnityAssemblies\UnityEngine.Networking.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEditor.Advertisements">
-      <HintPath>Library\UnityAssemblies\UnityEditor.Advertisements.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEditor.TreeEditor">
-      <HintPath>Library\UnityAssemblies\UnityEditor.TreeEditor.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEngine.UI">
-      <HintPath>Library\UnityAssemblies\UnityEngine.UI.dll</HintPath>
+    <Reference Include="JarResolverLib">
+      <HintPath>Assets\PlayServicesResolver\Editor\JarResolverLib.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
@@ -156,6 +129,8 @@
     <Compile Include="Assets\Editor\ImageEffects\SunShaftsEditor.cs" />
     <Compile Include="Assets\Editor\ImageEffects\TonemappingEditor.cs" />
     <Compile Include="Assets\Editor\ImageEffects\VignetteAndChromaticAberrationEditor.cs" />
+    <Compile Include="Assets\GoogleMobileAds\Editor\CocoaPodHelper.cs" />
+    <Compile Include="Assets\GoogleMobileAds\Editor\PostProcessor.cs" />
     <Compile Include="Assets\Mad Level Manager\Examples\Editor\ExampleGenerator.cs" />
     <Compile Include="Assets\Mad Level Manager\Scripts\Editor\IMadLevelGenerator.cs" />
     <Compile Include="Assets\Mad Level Manager\Scripts\Editor\Inspectors\MadAnimColorInspector.cs" />
@@ -222,6 +197,14 @@
     <Compile Include="Assets\Mad Level Manager\Scripts\MadCommons\Editor\MadTrialEditor.cs" />
     <Compile Include="Assets\Mad Level Manager\Scripts\MadCommons\Editor\MadUpdater.cs" />
     <Compile Include="Assets\Mad Level Manager\Scripts\MadCommons\Editor\MadWWWFormSender.cs" />
+    <Compile Include="Assets\PlayServicesResolver\Editor\AdMobDependencies.cs" />
+    <Compile Include="Assets\PlayServicesResolver\Editor\DefaultResolver.cs" />
+    <Compile Include="Assets\PlayServicesResolver\Editor\IResolver.cs" />
+    <Compile Include="Assets\PlayServicesResolver\Editor\PlayServicesResolver.cs" />
+    <Compile Include="Assets\PlayServicesResolver\Editor\ResolverVer1_1.cs" />
+    <Compile Include="Assets\PlayServicesResolver\Editor\ResolverVer1_2.cs" />
+    <Compile Include="Assets\PlayServicesResolver\Editor\SampleDependencies.cs" />
+    <Compile Include="Assets\PlayServicesResolver\Editor\SettingsDialog.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\GUIPackEasyFlat\Demo\Fonts\SIL Open Font License.txt" />
@@ -241,6 +224,9 @@
     <None Include="Assets\Mad Level Manager\Themes\Theme1\Fonts\font.txt" />
     <None Include="Assets\Mad Level Manager\Themes\Theme2\Font\abeezee-glyphs.txt" />
     <None Include="Assets\Mad Level Manager\Themes\Theme2\Font\abeezee-license.txt" />
+    <None Include="Assets\Plugins\Android\GoogleMobileAdsPlugin\AndroidManifest.xml" />
+    <None Include="Assets\Plugins\Android\firebase-common-9.0.2\AndroidManifest.xml" />
+    <None Include="Assets\Plugins\Android\firebase-common-9.0.2\proguard.txt" />
     <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\BlendModesOverlay.shader" />
     <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\BlurEffectConeTaps.shader" />
     <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\CameraMotionBlur.shader" />
