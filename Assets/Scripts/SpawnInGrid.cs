@@ -19,6 +19,7 @@ public class SpawnInGrid : MonoBehaviour
     public Text textEndScore;
     public Text textScore;
     public Animator endScoreAnim;
+    public AdController adController;
 
     private GameObject[,] gridd = new GameObject[30, 30];
     private Renderer[] allCards;
@@ -114,6 +115,7 @@ public class SpawnInGrid : MonoBehaviour
         endScoreAnim.Play("EndScore");
         textEndScore.text = endScore.ToString() + " points";
         yield return new WaitForSeconds(1.5f);
+        adController.ShowAd();
         MadLevel.LoadLevelByName("Level Select");
     }
 }

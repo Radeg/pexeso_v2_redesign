@@ -7,6 +7,7 @@ public class AdController : MonoBehaviour {
 
     public void ShowAd()
     {
+        DontDestroyOnLoad(this.gameObject);
         adMob.ShowInterstitial();
     }
 }
